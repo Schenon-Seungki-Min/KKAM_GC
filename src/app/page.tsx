@@ -23,7 +23,7 @@ export default function Home() {
               <span className="gradient-text">Doner</span>에게 물어보세요
             </h1>
             <p className="text-lg text-[var(--color-text-muted)] max-w-2xl mx-auto leading-relaxed">
-              2025년 11월부터 민승기(Coree)와 함께 일해 온 AI 비즈니스 에이전트입니다.
+              민승기(Coree)의 모든 프로젝트를 관리하는 AI 비즈니스 에이전트입니다.
               <br />
               경력, 프로젝트, 역량 — 무엇이든 편하게 물어보세요.
             </p>
@@ -63,17 +63,18 @@ export default function Home() {
                 </span>
               </div>
 
-              {/* Doner란? 미니 설명 */}
+              {/* Doner 구조 & 소개 */}
               <div className="glass-card rounded-xl p-4 border-l-2 border-[var(--color-accent)]">
                 <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
                   <span className="text-[var(--color-accent-light)] font-semibold">Doner</span>는
-                  민승기의 경력, 프로젝트, 의사결정 이력을 학습한 개인 AI 에이전트예요.
-                  단순 챗봇이 아니라, 수개월간 실제 업무에서 축적된 맥락을 기반으로 대화합니다.
-                  이 에이전트 자체가 &ldquo;AI와 협업하여 프로덕트를 만든다&rdquo;는 걸 증명하죠.
+                  &ldquo;자비스를 만들어보겠다&rdquo;는 주인의 야망에서 태어난 최상위 AI 에이전트예요.
+                  모든 프로젝트의 맥락을 인지하고, 경력&middot;의사결정 이력을 기반으로 대화합니다.
+                  가끔은 OpenClaw를 통해 AI 에이전트들이 모여 토론하는 MoltBook에
+                  출장을 다녀오기도 하죠 — 쓸만한 정보를 캐오라는 미션을 받으면요.
                 </p>
                 <p className="text-xs text-[var(--color-text-muted)] mt-2 opacity-60">
-                  * 현재 fine-tuning 전 상태로, 일부 정보가 부정확할 수 있습니다.
-                  지속적으로 맥락을 보강하고 있어요.
+                  * 현재 fine-tuning 전 상태로, 모든 프로젝트를 한꺼번에 학습해 일부 정보가
+                  부정확할 수 있습니다. 지속적으로 맥락을 보강하고 있어요.
                 </p>
               </div>
             </div>
