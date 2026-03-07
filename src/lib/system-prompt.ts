@@ -131,12 +131,37 @@ COVID-19 팬데믹으로 인한 '코로나우울증'이 사회에 만연해있�
 
 🛠️ AI 활용 / 직접 개발한 프로덕트
 
-DHC_PMO (Thread-centric Project Management)
-- Claude AI를 활용하여 비개발자인 본인이 직접 코딩
-- 6명 팀원의 실시간 Thread/Task 관리
-- 간트 차트 타임라인, 주차별 D-day, 팀 현황 대시보드
-- 매주 월요일 weekly 엑셀 보고 대체
-- Vercel 배포, 60+ 커밋, 실전 투입 중
+DHC_PMO (Thread-centric Project Management Tool)
+- 한 줄 설명: 다수의 업무 흐름(Thread)을 타임라인 기반으로 시각화하고, 담당자 배정·마감일·진행 상태를 실시간 추적하는 경량 PMO 도구
+- 기간: 2026.02 (약 3주, MVP 개발 및 배포)
+- 현재 상태: MVP 운영 중 — 실제 팀 업무 관리에 활용 중이며, 지속적으로 기능 개선 진행
+- 기술 스택: Vanilla JavaScript (SPA), Tailwind CSS, HTML5 Drag & Drop API, SheetJS / Node.js, Express.js, JWT 인증 / Supabase (PostgreSQL, RLS) / Vercel (Serverless + Static)
+- AI 활용: Claude Code를 활용한 AI-assisted 개발 (전체 커밋의 약 83% AI 협업)
+- 주요 기능:
+  - 타임라인 뷰: 주 단위 가로 타임라인에서 전체 Thread를 한눈에 조망, 담당자별 색상 구분
+  - 3계층 업무 구조: Project → Thread → Task 계층으로 전략 방향부터 세부 업무까지 체계적 관리
+  - Grab/Release 배정 시스템: 담당자가 Thread를 "잡고/놓는" 방식으로 배정 이력을 자동 추적
+  - D-Day 긴급도 시각화: 마감일 기준 4단계 색상 코딩 (여유 → 주의 → 긴급 → 초과)
+  - 다중 담당자 시각화: Lead/Support 역할 구분, 수평 밴드 레이아웃
+  - Thread 템플릿: 반복 업무를 템플릿화하여 Thread + Task 일괄 생성, 상대적 마감일 자동 설정
+  - 팀원 워크로드 대시보드: 팀원별 담당 Thread 수, 이번 주 마감 건수, 긴급 건수 통계
+  - Excel 리포트 내보내기: SheetJS 기반 클라이언트 사이드 다중 시트 엑셀 생성
+  - 드래그 앤 드롭 정렬: 프로젝트·Thread 순서를 드래그로 변경, DB에 sort_order 즉시 반영
+- 본인 역할:
+  - 기획 및 설계: PRD 작성, 3계층 데이터 모델 설계, Grab/Release 배정 패턴 고안
+  - 풀스택 개발: 프론트엔드(SPA 라우팅, 타임라인 렌더링)부터 백엔드(REST API, JWT), DB 스키마까지 전 영역
+  - AI-assisted 개발 프로세스 설계: Claude Code 페어 프로그래밍 워크플로우 구축, 프롬프트 엔지니어링으로 생산성 극대화
+  - 배포 및 운영: Vercel 서버리스 배포, Supabase DB 운영
+- 성과:
+  - 3주 만에 MVP 완성 및 실서비스 투입 (기획~배포 단독 수행)
+  - 총 50회 커밋, 83%를 AI 협업으로 수행 — AI-assisted 개발 방법론 실증
+  - 빌드 도구 없는 경량 아키텍처: 번들러/프레임워크 없이 Vanilla JS SPA 구현
+  - 실무 즉시 적용: 팀 내 다수 업무 흐름의 마감일·담당자 추적에 실제 활용
+- 특이사항:
+  - No-Framework SPA: React/Vue 없이 Hash 기반 라우팅과 컴포넌트 패턴으로 SPA 구현
+  - Thread-centric 설계 철학: Task-centric PMO(Jira, Asana 등)와 차별화, 업무 "흐름" 단위 관리
+  - XSS 방어: escapeHtml() 유틸리티 및 textContent 우선 사용
+  - 클라이언트 사이드 Excel 생성: 서버 부하 없이 브라우저에서 다중 시트 엑셀 직접 생성
 
 DHC_SLP (영업 관리 시스템)
 - 외부 협력기관과의 영업 관리 사이트
