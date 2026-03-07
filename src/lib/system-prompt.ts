@@ -230,7 +230,34 @@ KKAM_SLP / Blankie (수면 웰니스 앱)
   - 인플루언서 라이브 클래스 (YouTube Live + X Spaces) 연계 수익 모델 설계
 
 KKAM_SNS (트렌드 & 콘텐츠 자동화)
-- 트렌드 분석 모듈 기반 콘텐츠 자동화
+- 한 줄 설명: 네이버/유튜브/구글/PubMed 멀티소스 트렌드 수집 및 커뮤니티 분석 자동화 시스템
+- 기간: 2026.01 ~ 현재 (진행 중)
+- 현재 상태: MVP 1.0 (Phase 1 완료, Phase 2 진행 예정)
+- 기술 스택: Next.js 16.1, React 19, TypeScript 5, Tailwind CSS 4 / Next.js App Router (API Routes), Serverless Functions / YouTube Data API v3, Naver Search API, Naver DataLab API, Google Trends (SerpAPI), PubMed E-utilities / Vercel
+- 주요 기능:
+  - 멀티소스 트렌드 대시보드: Google Trends, Naver DataLab, PubMed 3개 소스에서 실시간 트렌드 수집, 정규화(0-100), 중복 키워드 제거, 소스별 필터링
+  - 커뮤니티 분석 (Type A): 네이버 블로그/카페/지식iN + YouTube 플랫폼별 탭 분리 검색, 각 플랫폼 고유 필터 지원
+  - YouTube 고급 검색: 최대 50건, 날짜/조회수 필터, 3단 API 호출 (search → videos/statistics → channels/statistics)
+  - YouTube 댓글 분석: 인기 댓글 TOP 10 (좋아요 순), 댓글 키워드 워드클라우드, 기본 통계
+  - 연관 키워드 워드클라우드: 제목/설명 키워드 빈출 분석, 클릭 시 재검색 드릴다운
+  - CSV 다운로드: 채널명, 임팩트 지수, View, Like, 제목, 내용 요약, 유형, 주요 키워드, 링크 형식
+  - 네이버 검색 정렬: 정확도순/최신순 선택 지원
+- 본인 역할:
+  - 프로젝트 기획 및 전체 아키텍처 설계
+  - Next.js App Router 기반 풀스택 개발
+  - 5개 외부 API (YouTube, Naver Search, Naver DataLab, Google Trends, PubMed) 연동 설계 및 구현
+  - API 쿼터 최적화 설계 (YouTube 검색 1회당 ~150 유닛, 댓글 분석 온디맨드 호출)
+  - Vercel 배포 파이프라인 구축 및 환경변수 관리
+  - 에러 핸들링 전략 수립 (API 실패 시 Mock 데이터 Graceful Fallback)
+- 성과:
+  - 5개 외부 API를 단일 대시보드로 통합, 트렌드 리서치 시간 단축
+  - Promise.allSettled 기반 병렬 API 호출로 응답 시간 최소화
+  - YouTube 3단 API 호출 파이프라인 (search → video stats → channel stats)으로 풍부한 메타데이터 확보
+  - 클라이언트 사이드 조회수 필터링 + 서버 사이드 정렬 하이브리드 전략으로 YouTube API 한계 극복
+- 특이사항:
+  - 수면 마케팅 사업체(DHC_SLP, Blankie) 연계 프로젝트의 콘텐츠 허브 역할 (1타 4피 구조)
+  - Phase 2에서 Claude API 기반 콘텐츠 자동 생성, DALL-E 이미지 생성, 자동 포스팅 기능 확장 예정
+  - TypeScript Strict Mode 적용, 전체 타입 안전성 확보
 
 Doner (개인 AI 총괄 에이전트)
 - 약 6개월간 운영 중인 개인 AI 비즈니스 에이전트
