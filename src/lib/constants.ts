@@ -76,6 +76,15 @@ export const PRODUCTS = [
     keyFeature: "9개 지역 실거래가, 5가지 가중치 스코어링",
   },
   {
+    name: "급여 의약품 조회",
+    subtitle: "건강보험심사평가원 의약품 검색",
+    description: "21,702개 전체 급여 의약품 검색 및 신규 등재 의약품 실시간 조회. 투여경로·구분·가격 등 고급 필터와 서버사이드 페이지네이션 지원",
+    tech: ["Next.js 16", "TypeScript", "Tailwind CSS", "공공데이터 API"],
+    status: "운영 중",
+    period: "2026.03",
+    keyFeature: "21,702개 의약품 DB, XML→JSON 자동 변환",
+  },
+  {
     name: "KKAM_GC",
     subtitle: "Doner — 지금 이 사이트",
     description: "민승기의 경력·프로젝트를 학습한 AI 에이전트가 채용 담당자와 자연어로 대화하는 인터랙티브 포트폴리오",
