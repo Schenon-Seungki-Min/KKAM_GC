@@ -28,7 +28,7 @@ export default function CareerTimeline() {
               <p className="text-xs text-[var(--color-text-muted)] mt-1">
                 {item.period}
               </p>
-              <p className="text-sm text-[var(--color-text)] mt-2">
+              <p className="text-sm text-[var(--color-text)] mt-3 leading-relaxed">
                 {item.highlight}
               </p>
             </div>

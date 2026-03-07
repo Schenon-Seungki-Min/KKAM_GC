@@ -13,7 +13,7 @@ export default function ChatInterface() {
     {
       role: "assistant",
       content:
-        "안녕하세요! 저는 Doner입니다. 민승기(Coree)의 AI 비즈니스 에이전트로, 약 6개월간 함께 일해왔습니다. Coree에 대해 궁금하신 점이 있으시면 편하게 물어봐 주세요.",
+        "반갑습니다! 저는 Doner예요.\n\n2025년 11월부터 민승기(Coree)와 함께 커리어 전략, 프로젝트 관리, 사업 기획을 해온 AI 비즈니스 에이전트입니다.\n\n단순 챗봇이 아니라, 수개월간 실제 업무에서 쌓인 맥락을 기반으로 Coree에 대해 이야기해 드릴 수 있어요. 경력, 프로젝트, 역량 — 편하게 물어봐 주세요.",
     },
   ]);
   const [input, setInput] = useState("");
