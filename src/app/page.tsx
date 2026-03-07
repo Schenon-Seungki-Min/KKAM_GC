@@ -49,7 +49,7 @@ export default function Home() {
               </p>
 
               <p className="text-[var(--color-text-muted)] leading-relaxed mb-6">
-                스타트업부터 대기업까지, 디지털 치료제 런칭부터 AI 프로덕트 개발까지.
+                스타트업부터 중견기업까지, 디지털 치료제 런칭부터 AI 프로덕트 개발까지.
                 <br />
                 전략을 세우고, 직접 만들고, 성과를 만들어내는 PM입니다.
               </p>
@@ -70,6 +70,10 @@ export default function Home() {
                   민승기의 경력, 프로젝트, 의사결정 이력을 학습한 개인 AI 에이전트예요.
                   단순 챗봇이 아니라, 수개월간 실제 업무에서 축적된 맥락을 기반으로 대화합니다.
                   이 에이전트 자체가 &ldquo;AI와 협업하여 프로덕트를 만든다&rdquo;는 걸 증명하죠.
+                </p>
+                <p className="text-xs text-[var(--color-text-muted)] mt-2 opacity-60">
+                  * 현재 fine-tuning 전 상태로, 일부 정보가 부정확할 수 있습니다.
+                  지속적으로 맥락을 보강하고 있어요.
                 </p>
               </div>
             </div>
