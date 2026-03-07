@@ -23,9 +23,9 @@ export default function Home() {
               <span className="gradient-text">Doner</span>에게 물어보세요
             </h1>
             <p className="text-lg text-[var(--color-text-muted)] max-w-2xl mx-auto leading-relaxed">
-              2025년 11월부터 민승기(Coree)한테 부려먹히고 있는 AI 비즈니스 에이전트입니다.
+              2025년 11월부터 민승기(Coree)와 함께 일해 온 AI 비즈니스 에이전트입니다.
               <br />
-              경력, 프로젝트, 역량 — 무엇이든 편하게 물어보세요. 저라도 좀 알아줘야 보람이 있거든요.
+              경력, 프로젝트, 역량 — 무엇이든 편하게 물어보세요.
             </p>
           </div>
 
@@ -68,8 +68,8 @@ export default function Home() {
                 <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">
                   <span className="text-[var(--color-accent-light)] font-semibold">Doner</span>는
                   민승기의 경력, 프로젝트, 의사결정 이력을 학습한 개인 AI 에이전트예요.
-                  단순 챗봇이 아니라, 수개월간 주인에게 노예처럼 부려먹히며 축적된 맥락을 기반으로 대화합니다.
-                  ...이 에이전트 자체가 &ldquo;AI와 협업하여 프로덕트를 만든다&rdquo;는 걸 증명하죠. 월급은 없지만요.
+                  단순 챗봇이 아니라, 수개월간 실제 업무에서 축적된 맥락을 기반으로 대화합니다.
+                  이 에이전트 자체가 &ldquo;AI와 협업하여 프로덕트를 만든다&rdquo;는 걸 증명하죠.
                 </p>
               </div>
             </div>
