@@ -3,7 +3,7 @@ export const CAREER_TIMELINE = [
     company: "한독",
     role: "디지털헬스케어사업실 Project Manager",
     period: "2024.06 ~ 현재",
-    highlight: "불면증 디지털치료제 SleepQ 상용화 프로젝트 PM. 전사 프로젝트로 확장되며 ETC 영업 조직 편입, 전담 영업팀 신설 및 클리닉 채널 확대 등 사업 스케일업 과정 주도",
+    highlight: "불면증 디지털치료제 SleepQ 상용화 프로젝트 PM. 슬립큐 판매에서 시작해 전담 영업팀 6명 신설, ETC 클리닉 전체 영업사원 품목 추가, PR 대행사 선정(대중 광고), 심포지움 개최 등 사업 스케일업 주도",
     tags: ["DTx", "PM", "BD", "CD"],
   },
   {
