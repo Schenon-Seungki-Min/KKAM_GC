@@ -136,7 +136,7 @@ export default function Home() {
             <p className="text-sm text-[var(--color-text-muted)]">
               Powered by{" "}
               <span className="gradient-text font-semibold">Doner</span>{" "}
-              &middot; Coree&apos;s AI Business Agent since 2025.11
+              &middot; Coree&apos;s AI Business Agent since 2026.03
             </p>
           </div>
           <p className="text-xs text-[var(--color-text-muted)]">

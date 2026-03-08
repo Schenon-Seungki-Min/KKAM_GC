@@ -90,7 +90,7 @@ export const PRODUCTS = [
     description: "민승기의 경력·프로젝트를 학습한 AI 에이전트가 채용 담당자와 자연어로 대화하는 인터랙티브 포트폴리오",
     tech: ["Next.js 15", "Claude API", "Vercel"],
     status: "운영 중 (v4)",
-    period: "2025.11 ~",
+    period: "2026.03 ~",
     keyFeature: "AI가 나를 소개하는 포트폴리오",
   },
 ];
