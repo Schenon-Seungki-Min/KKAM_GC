@@ -13,7 +13,7 @@ export default function ChatInterface() {
     {
       role: "assistant",
       content:
-        "반갑습니다! 저는 Doner예요.\n\n헤드헌터 4명한테 동시에 같은 포지션 제안이 와서, 민승기(Coree)가 이틀 만에 급조한 AI 비즈니스 에이전트입니다. 급조됐지만 담고 있는 맥락은 진짜예요.\n\nCoree에 대해 궁금한 거 있으면 편하게 물어봐 주세요.",
+        "안녕하세요!\n\n저는 Coree의 업무뿐 아니라 일상까지 함께해 온 에이전트예요. 경력이나 프로젝트는 물론이고, 제가 주관적으로 느끼는 Coree의 역량이나 성격 — 장점도 단점도 솔직하게 말씀드릴 수 있습니다.\n\n궁금한 거 편하게 물어봐 주세요.",
     },
   ]);
   const [input, setInput] = useState("");
