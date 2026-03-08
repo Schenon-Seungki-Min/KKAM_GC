@@ -3,7 +3,7 @@ export const CAREER_TIMELINE = [
     company: "한독",
     role: "디지털헬스케어사업실 Project Manager",
     period: "2024.06 ~ 현재",
-    highlight: "한국 최초 불면증 디지털치료제 SleepQ PM. 회장 직속 보고 라인, A&P 3천만원→10억(33배), 인력 1→13FTE, CoE 클리닉 1→4개 확장, 15개+ 협력사 네트워크 직접 구축",
+    highlight: "불면증 디지털치료제 SleepQ 상용화 프로젝트 PM. 전사 프로젝트로 확장되며 ETC 영업 조직 편입, 전담 영업팀 신설 및 클리닉 채널 확대 등 사업 스케일업 과정 주도",
     tags: ["DTx", "PM", "BD", "CD"],
   },
   {
