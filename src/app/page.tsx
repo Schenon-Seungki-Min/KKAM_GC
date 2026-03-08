@@ -56,7 +56,7 @@ export default function Home() {
 
               <div className="flex flex-wrap gap-3 text-sm mb-6">
                 <span className="px-3 py-1 rounded-full bg-[var(--color-accent)]/15 text-[var(--color-accent-light)]">
-                  DHC 한독 &middot; 디지털헬스케어 PM
+                  한독 &middot; 디지털헬스케어사업실 Project Manager
                 </span>
                 <span className="px-3 py-1 rounded-full bg-[var(--color-surface-light)] text-[var(--color-text-muted)]">
                   SleepQ Project Manager
