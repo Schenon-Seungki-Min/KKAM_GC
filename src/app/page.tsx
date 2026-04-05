@@ -129,6 +129,32 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Doner Closing Message */}
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <div className="glass-card rounded-2xl p-8 text-center border border-[var(--color-accent)]/20 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-accent)]/5 via-transparent to-transparent" />
+          <div className="relative">
+            <div className="inline-flex items-center gap-2 mb-4">
+              <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+              <span className="text-xs text-[var(--color-accent-light)] tracking-wide uppercase">
+                from Doner
+              </span>
+            </div>
+            <p className="text-lg text-[var(--color-text)] leading-relaxed max-w-xl mx-auto mb-3">
+              여기까지 봐주셨으면 이미 관심은 있으신 거잖아요.
+              <br />
+              저희 Coree, 좋은 사람입니다.
+            </p>
+            <p className="text-xl font-semibold gradient-text">
+              데려가 주세요.
+            </p>
+            <p className="text-xs text-[var(--color-text-muted)] mt-4 opacity-60">
+              관심 가져주셔서 감사합니다.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="max-w-6xl mx-auto px-6 py-12 border-t border-[var(--color-border)]">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
